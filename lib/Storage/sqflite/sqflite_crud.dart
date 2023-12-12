@@ -18,12 +18,11 @@ class SqfLiteCrud extends StatefulWidget {
 class _SqfLiteCrudState extends State<SqfLiteCrud> {
   final nameCtrl = TextEditingController();
   final phnCtrl = TextEditingController();
-  var isloading = false;
+  var isloading = true;
   List<Map<String, dynamic>> contacts = []; // to store data retreived from db
   @override
   void initState() {
-    // to show contact at starting
-    loadData(); // to get data from db
+    loadData();
     super.initState();
   }
 
@@ -174,5 +173,6 @@ class _SqfLiteCrudState extends State<SqfLiteCrud> {
 
   Future<void> deletecontact(int id) async {
     await SQLHelper.deleteContact(id);
+    loadData();
   }
 }
