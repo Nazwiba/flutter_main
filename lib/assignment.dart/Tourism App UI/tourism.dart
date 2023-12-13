@@ -21,13 +21,11 @@ class _TourismState extends State<Tourism> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Center(
-          child: Text(
-            "Tourism App UI",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.black),
+          backgroundColor: const Color.fromARGB(255, 1, 34, 60),
+        title: const Text("POPULAR",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.white),
           ),
-        ),
+        
       ),
       body: GridView.count(
         crossAxisCount: 1,
