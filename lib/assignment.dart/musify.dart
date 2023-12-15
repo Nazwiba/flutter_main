@@ -263,7 +263,7 @@ class _MusifyState extends State<Musify> {
                     height: 50,
                     width: 50,
                     child: Image.asset(
-                      "assets/images/i'm good.jpg",
+                      "assets/images/let mw down slowly.jpg",
                       fit: BoxFit.fill,
                     )),
                 title: const Text("Let Me Down Slowly",
@@ -287,7 +287,7 @@ class _MusifyState extends State<Musify> {
                     height: 50,
                     width: 50,
                     child: Image.asset(
-                      "assets/images/let mw down slowly.jpg",
+                      "assets/images/perfect.jpg",
                       fit: BoxFit.fill,
                     )),
                 title: const Text("Perfect",
@@ -311,7 +311,7 @@ class _MusifyState extends State<Musify> {
                     height: 50,
                     width: 50,
                     child: Image.asset(
-                      "assets/images/perfect.jpg",
+                      "assets/images/lover.jpg",
                       fit: BoxFit.fill,
                     )),
                 title: const Text("Lover",
