@@ -40,9 +40,9 @@ class _MusifyState extends State<Musify> {
           backgroundColor: Colors.black,
           title: const Center(
             child: Text(
-              "Musify",
+              "Musify.",
               style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                   color: Color.fromARGB(255, 235, 140, 172)),
             ),
@@ -61,8 +61,8 @@ class _MusifyState extends State<Musify> {
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             backgroundColor: Colors.black,
-            selectedItemColor: const Color.fromARGB(255, 235, 140, 172),
-            unselectedItemColor: const Color.fromARGB(255, 235, 140, 172),
+    selectedItemColor: const Color.fromARGB(255, 235, 140, 172),
+  unselectedItemColor: const Color.fromARGB(255, 235, 140, 172),
             selectedLabelStyle: const TextStyle(fontSize: 15),
             onTap: (tapindex) {
               setState(() {
@@ -94,7 +94,8 @@ class _MusifyState extends State<Musify> {
                 height: 150,
                 width: double.infinity,
                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                    BoxDecoration(
+                      borderRadius: BorderRadius.circular(10)),
                 child: GridView.count(
                     scrollDirection: Axis.horizontal,
                     crossAxisCount: 1,
@@ -106,10 +107,10 @@ class _MusifyState extends State<Musify> {
                                 height: 10,
                                 width: 10,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    image: DecorationImage(
-                                        image: AssetImage(image[index]),
-                                        fit: BoxFit.fill)),
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                          image: AssetImage(image[index]),
+                          fit: BoxFit.fill)),
                               ),
                             )))),
             const ListTile(
@@ -139,7 +140,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Taylor Swift",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(
@@ -167,7 +169,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Sam Smith, Kim Pectras",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(
@@ -195,7 +198,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Rihanna",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold,
+                       color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(
@@ -223,7 +227,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Dax",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(
@@ -249,7 +254,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "David Guetta & Bebe Rexha",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(Icons.star_border_outlined,
@@ -273,7 +279,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Alec Benjamin",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(Icons.star_border_outlined,
@@ -297,7 +304,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Ed Sheeran",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(Icons.star_border_outlined,
@@ -321,7 +329,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Taylor Swift",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(Icons.star_border_outlined,
@@ -345,7 +354,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Duncan Laurence",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(Icons.star_border_outlined,
@@ -369,7 +379,8 @@ class _MusifyState extends State<Musify> {
                 subtitle: const Text(
                   "Glass Animals",
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      TextStyle(fontWeight: FontWeight.bold,
+                       color: Colors.white),
                 ),
                 trailing: const Wrap(children: [
                   Icon(Icons.star_border_outlined,

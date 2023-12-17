@@ -41,7 +41,7 @@ class Details extends StatelessWidget {
                     child: SizedBox(
                       height:100,
                       width:100,
-                      child: Image.asset(country["Place to visit 4"],fit: BoxFit.fill,)),
+                      child: Image.asset(country["Place to visit 3"],fit: BoxFit.fill,)),
                   ),
                 ],
               ),

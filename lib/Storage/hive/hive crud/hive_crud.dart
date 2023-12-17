@@ -65,7 +65,8 @@ class _HiveCRUDState extends State<HiveCRUD> {
                                 create_edit_task(task[index]["id"]);
                               },
                               icon: const Icon(Icons.edit)),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.delete))
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.delete))
                         ],
                       ),
                     ),
@@ -80,6 +81,12 @@ class _HiveCRUDState extends State<HiveCRUD> {
   }
 
   void create_edit_task(int? itemkey) {
+    if (itemkey != null) {
+      final selected_task =
+          task.firstWhere((element) => element["id"] == itemkey);
+      tname_ctrl.text = selected_task["name"];
+      tcont_ctrl.text = selected_task["content"];
+    }
     showModalBottomSheet(
         elevation: 5,
         isScrollControlled: true,

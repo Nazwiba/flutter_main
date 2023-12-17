@@ -7,7 +7,7 @@ void main() {
 }
 
 class City extends StatelessWidget {
-  var CityName = [
+  var cityName = [
   "Delhi", 
   "Finland", 
   "London", 
@@ -17,7 +17,7 @@ class City extends StatelessWidget {
   "Switzerland",
   "Amsterdam"
   ];
-  var CountryName = [
+  var countryName = [
   "India",
   "Europe", 
   "UK", 
@@ -26,7 +26,7 @@ class City extends StatelessWidget {
   "France",
   "Europe",
   "Netherlands"];
-  var Population = [
+  var population = [
     "Population: 32.9 mill",
     "Population: 5.54 mill",
     "Population: 8.8 mill",
@@ -80,7 +80,7 @@ class City extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(CityName[index],
+                          Text(cityName[index],
                           style: const TextStyle(fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black),),
@@ -91,12 +91,12 @@ class City extends StatelessWidget {
                                 crossAxisAlignment: 
                                 CrossAxisAlignment.start,
                                 children: [
-                                  Text(CountryName[index],
+                                  Text(countryName[index],
                                   style: const TextStyle(
                                     fontSize: 18,
                                   fontWeight: FontWeight.normal,
                                   color: Colors.black),),
-                                  Text(Population[index], // Text("population: ${population[index]}")
+                                  Text(population[index], // Text("population: ${population[index]}")
                                   style: const TextStyle(
                                     fontSize: 15),)
                                 ],

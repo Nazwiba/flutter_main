@@ -22,9 +22,7 @@ class _PlayListsState extends State<PlayLists> {
     "assets/images/musciappimage3.jpg",
     "assets/images/musicappimage4.jpg"
   ];
-
   var index = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +45,8 @@ class _PlayListsState extends State<PlayLists> {
               fillColor: Colors.grey.shade900,
               hintText: "Search...",
               hintStyle:
-                  const TextStyle(color: Color.fromARGB(255, 235, 140, 172)),
+                  const TextStyle(color:
+                   Color.fromARGB(255, 235, 140, 172)),
               suffixIcon: const Icon(
                 Icons.search,
                 color: Color.fromARGB(255, 235, 140, 172),
@@ -62,8 +61,8 @@ class _PlayListsState extends State<PlayLists> {
       bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.black,
-          selectedItemColor: const Color.fromARGB(255, 235, 140, 172),
-          unselectedItemColor: const Color.fromARGB(255, 235, 140, 172),
+    selectedItemColor: const Color.fromARGB(255, 235, 140, 172),
+   unselectedItemColor: const Color.fromARGB(255, 235, 140, 172),
           selectedLabelStyle: const TextStyle(fontSize: 15),
           onTap: (tapindex) {
             setState(() {
@@ -116,6 +115,34 @@ class _PlayListsState extends State<PlayLists> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //       body: GridView.builder(
 //           itemCount: 8,
