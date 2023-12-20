@@ -23,7 +23,8 @@ class _TourismState extends State<Tourism> {
       appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 1, 34, 60),
         title: const Text("POPULAR",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.white),
+            style: TextStyle(fontSize: 25, 
+            fontWeight: FontWeight.bold,color: Colors.white),
           ),
         
       ),
@@ -36,14 +37,15 @@ class _TourismState extends State<Tourism> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: GestureDetector(
-              onTap: ()=> Navigator.pushNamed(context, "Details",arguments: e["id"]),
+              onTap: ()=> Navigator.pushNamed(context, 
+              "Details",arguments: e["id"]),
                 child: Container(
                   
                 
                   height: 300,
                   width: 800,
-                    child: Image.asset(e["Image"],fit: BoxFit.fill,),
-                  //child: Image(image: NetworkImage("https://tse1.mm.bing.net/th?id=OIP.3ZKeYaQY-BKhm8qJPpnw2wHaE7&pid=Api&P=0&h=220"),fit: BoxFit.fill,),
+                    child: Image.asset(e["Image"],
+                    fit: BoxFit.fill,),
                 ),
                 
               ),
@@ -51,7 +53,9 @@ class _TourismState extends State<Tourism> {
             Positioned(
               top: 250,
               left: 20,
-              child: Text(e["Country"],style: const TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold),))
+              child: Text(e["Country"],style: const TextStyle(
+                color: Colors.white,fontSize: 25,
+                fontWeight: FontWeight.bold),))
         
           ],
 

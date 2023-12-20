@@ -16,8 +16,11 @@ class Details extends StatelessWidget {
                 const TextStyle(fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Colors.black),),
-              Text(country["Description"],style: GoogleFonts.dmSerifDisplay(),),
-              const Text("Place to Visit",style: TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),),
+              Text(country["Description"],
+              style: GoogleFonts.dmSerifDisplay(),),
+              const Text("Place to Visit",
+              style: TextStyle(fontSize: 25,
+              color: Colors.black,fontWeight: FontWeight.bold),),
               Wrap(
                 direction: Axis.horizontal,
                 children: [
@@ -26,14 +29,16 @@ class Details extends StatelessWidget {
                     child: SizedBox(
                       height: 100,
                       width: 100,
-                      child: Image.asset(country["Place to visit 1"],fit: BoxFit.fill,),),
+                    child: Image.asset(country["Place to visit 1"],
+                    fit: BoxFit.fill,),),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
                       height: 100,
                       width: 100,
-                      child: Image.asset(country["Place to visit 2"],fit: BoxFit.fill,)
+                  child: Image.asset(country["Place to visit 2"],
+                  fit: BoxFit.fill,)
                       ),
                   ),
                   Padding(
@@ -41,15 +46,19 @@ class Details extends StatelessWidget {
                     child: SizedBox(
                       height:100,
                       width:100,
-                      child: Image.asset(country["Place to visit 3"],fit: BoxFit.fill,)),
+                    child: Image.asset(country["Place to visit 3"],
+                      fit: BoxFit.fill,)),
                   ),
                 ],
               ),
               ElevatedButton(onPressed: (){}, 
               style: const ButtonStyle(
-                shape: MaterialStatePropertyAll(StadiumBorder()),
-                backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 1, 34, 60))),
-              child: const Text("Explore",style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),),
+            shape: MaterialStatePropertyAll(StadiumBorder()),
+              backgroundColor: MaterialStatePropertyAll(
+                Color.fromARGB(255, 1, 34, 60))),
+              child: const Text("Explore",style: 
+              TextStyle(fontSize: 25,color: Colors.white,
+              fontWeight: FontWeight.bold),),
               )
             ],
           ),
