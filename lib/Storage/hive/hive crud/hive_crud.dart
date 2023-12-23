@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 
 void main() async {
@@ -66,7 +65,10 @@ class _HiveCRUDState extends State<HiveCRUD> {
                               },
                               icon: const Icon(Icons.edit)),
                           IconButton(
-                              onPressed: () {}, icon: const Icon(Icons.delete))
+                              onPressed: () {
+                                delete_task(task[index]["id"]);
+                              },
+                              icon: const Icon(Icons.delete))
                         ],
                       ),
                     ),
@@ -142,6 +144,11 @@ class _HiveCRUDState extends State<HiveCRUD> {
 
   Future<void> edit_task(int itemkey, Map<String, String> utask) async {
     await todobox.put(itemkey, utask);
+    read_refresh_task();
+  }
+
+  Future<void> delete_task(int itemkey) async {
+    await todobox.delete(itemkey);
     read_refresh_task();
   }
 }
