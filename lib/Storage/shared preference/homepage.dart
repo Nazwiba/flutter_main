@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_main/Storage/shared%20preference/shared_login.dart';
-import 'package:flutter_main/Storage/shared%20preference/shared_signup.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage1 extends StatefulWidget {
