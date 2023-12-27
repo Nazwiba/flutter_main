@@ -1,4 +1,4 @@
-import 'package:flutter_main/api/api_http_and_getex/model/product_model.dart';
+import 'package:flutter_main/api/api_http_and_getx/model/product_model.dart';
 import 'package:http/http.dart' as http;
 
 class HttpService {
